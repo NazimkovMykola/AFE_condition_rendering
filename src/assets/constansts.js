@@ -1,0 +1,21 @@
+export const asideNavigation = [
+  { text: "Головна", href: "/" },
+  { text: "Перша", href: "/" },
+  { text: "Друга", href: "/" },
+  { text: "Головна", href: "/" },
+  { text: "Перша", href: "/" },
+  { text: "Друга", href: "/" },
+  { text: "Головна", href: "/" },
+  { text: "Перша", href: "/" },
+  { text: "Друга", href: "/" },
+  { text: "Головна", href: "/" },
+  { text: "Перша", href: "/" },
+  { text: "Друга", href: "/" },
+  { text: "Головна", href: "/" },
+  { text: "Перша", href: "/" },
+  { text: "Друга", href: "/" },
+  { text: "Головна", href: "/" },
+  { text: "Перша", href: "/" },
+  { text: "Друга", href: "/" },
+];
+

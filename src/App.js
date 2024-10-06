@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { asideNavigation } from "./assets/constansts";
+import Accordeon from "./components/Accordeon/Accordeon";
+import ButtonContainer from "./components/ButtonContainer/ButtonContainer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header>Header</header>
+      <main>
+        <aside>
+          Aside
+          <nav>
+            {asideNavigation.map(function (menuItem, indx) {
+              return (
+                <a key={indx + menuItem.text} href={menuItem.href}>
+                  {menuItem.text}
+                </a>
+              );
+            })}
+          </nav>
+        </aside>
+        <ButtonContainer isLogin={false} />
+        <Accordeon />
+      </main>
+      <footer>Footer</footer>
     </div>
   );
 }
